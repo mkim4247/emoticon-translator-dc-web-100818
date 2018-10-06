@@ -1,0 +1,32 @@
+
+[1mFrom:[0m /home/mkim4247/emoticon-translator-dc-web-100818/lib/translator.rb @ line 26 Object#load_library:
+
+     [1;34m5[0m: [32mdef[0m [1;34mload_library[0m(file_path)
+     [1;34m6[0m:   emoticons = [1;34;4mYAML[0m.load_file(file_path)
+     [1;34m7[0m: 
+     [1;34m8[0m:   translator = {
+     [1;34m9[0m:     [31m[1;31m"[0m[31mget_meaning[1;31m"[0m[31m[0m => {},
+    [1;34m10[0m:     [31m[1;31m"[0m[31mget_emoticon[1;31m"[0m[31m[0m => {}
+    [1;34m11[0m:   }
+    [1;34m12[0m:   japanese_emoticons = []
+    [1;34m13[0m:   english_emoticons = []
+    [1;34m14[0m:   meaning = []
+    [1;34m15[0m: 
+    [1;34m16[0m:   emoticons.each [32mdo[0m |key, array|
+    [1;34m17[0m:     japanese_emoticons << array[[1;34m1[0m]
+    [1;34m18[0m:     english_emoticons << array[[1;34m0[0m]
+    [1;34m19[0m:     meaning << key 
+    [1;34m20[0m:   [32mend[0m 
+    [1;34m21[0m:   
+    [1;34m22[0m:   japanese_emoticons.each [32mdo[0m |jap_emo|
+    [1;34m23[0m:     english_emoticons.each [32mdo[0m |eng_emo|
+    [1;34m24[0m:       meaning.each [32mdo[0m |word|
+    [1;34m25[0m:         translator[[31m[1;31m"[0m[31mget_meaning[1;31m"[0m[31m[0m][jap_emo] = word
+ => [1;34m26[0m:           binding.pry 
+    [1;34m27[0m:       [32mend[0m 
+    [1;34m28[0m:     [32mend[0m 
+    [1;34m29[0m:   [32mend[0m 
+    [1;34m30[0m:   translator
+    [1;34m31[0m: 
+    [1;34m32[0m: [32mend[0m
+
