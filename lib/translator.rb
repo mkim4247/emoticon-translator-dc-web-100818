@@ -30,11 +30,13 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  load_library(file_path)["get_emoticon"].each do |eng, jap|
-    if emoticon = load_library(file_path)["get_emoticon"][eng]
-      return jap 
+  jap_emoticon = ""
+  load_library(file_path)["get_emoticon"].each do |eng_emo, jap_emo|
+    if emoticon = eng_emo
+      jap_emoticon = jap_emo
     end 
   end 
+  jap_emoticon
 end
 
 #   it "returns an apology message if the argument is not a known emoticon" do
