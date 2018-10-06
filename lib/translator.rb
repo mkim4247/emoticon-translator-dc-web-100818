@@ -32,21 +32,9 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   load_library(file_path)
   
-  
+  if translator.include?(emoticon) 
   
 end
-
-#   it "returns the Japanese equivalent of an English grinning" do
-#     expect(get_japanese_emoticon("./lib/emoticons.yml", "=D")).to eq("(￣ー￣)")
-#   end
-
-#   it "returns the Japanese equivalent of an English happy" do
-#     expect(get_japanese_emoticon("./lib/emoticons.yml", ":)")).to eq("(＾ｖ＾)")
-#   end
-
-#   it "returns the Japanese equivalent of an English sad" do
-#     expect(get_japanese_emoticon("./lib/emoticons.yml", ":'(")).to eq("(Ｔ▽Ｔ)")
-#   end
 
 #   it "returns an apology message if the argument is not a known emoticon" do
 #     sorry_message = "Sorry, that emoticon was not found"
