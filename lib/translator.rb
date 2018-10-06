@@ -21,6 +21,7 @@ def load_library(file_path)
   i = 0 
   while i < meaning.length 
     translator["get_meaning"][japanese_emoticons[i]] = meaning[i]
+    translator["get_emoticon"][english_emoticons[i]] = japanese_emoticons[i]
     i += 1 
     end 
 
