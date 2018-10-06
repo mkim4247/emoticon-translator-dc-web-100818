@@ -33,6 +33,7 @@ def get_japanese_emoticon(file_path, emoticon)
   load_library(file_path)
   
   
+  
 end
 
 #   it "returns the Japanese equivalent of an English grinning" do
