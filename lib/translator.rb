@@ -34,7 +34,7 @@ def get_japanese_emoticon(file_path, emoticon)
   sorry_message = "Sorry, that emoticon was not found"
   
   if emo_file.has_key?(emoticon)
-    emo_file.fetch_values(emoticon).to_s
+    emo_file.fetch_values(emoticon)
   else 
     return sorry_message
   end 
