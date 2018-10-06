@@ -30,7 +30,7 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  if load_library(file_path).include?(emoticon)
+  
     
   end 
   
