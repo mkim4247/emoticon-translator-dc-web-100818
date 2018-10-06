@@ -40,6 +40,9 @@ def get_japanese_emoticon(file_path, emoticon)
   end 
 end
 
+# def get_english_meaning
+
+end
 
 
 # describe "#get_english_meaning" do
@@ -78,6 +81,3 @@ end
 
 
 
-# def get_english_meaning
-#   # code goes here
-# end
