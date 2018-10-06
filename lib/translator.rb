@@ -38,10 +38,9 @@ def get_japanese_emoticon(file_path, emoticon)
         if emoticon = eng
           return jap
         end 
-      end 
-    else 
-      return sorry_message
     end 
+  else 
+    return sorry_message
   end 
 end
 
