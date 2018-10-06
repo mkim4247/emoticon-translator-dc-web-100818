@@ -21,8 +21,8 @@ def load_library(file_path)
   japanese_emoticons.each do |jap_emo|
     english_emoticons.each do |eng_emo|
       meaning.each do |word|
-        translator["get_meaning"][jap_emo] = word
-          binding.pry 
+        translator["get_meaning"][jap_emo] = "#{word}"
+        
       end 
     end 
   end 
@@ -39,19 +39,7 @@ end
  
   #{angel => [O:), ☜(⌒▽⌒)☞]
 
-#     it "the keys inside the 'get_meaning' hash are the Japanese emoticons" do
-#       emoticons = ["☜(⌒▽⌒)☞", "(ΘεΘ;)", "(￣ー￣)", "o_O", "(^_-)"]
-#       emoticons.each do |japanese_emoticon| 
-#         expect(result['get_meaning'].keys).to include(japanese_emoticon)
-#       end
-#     end
 
-#     it "the emoticon keys inside the 'get_meaning' hash point to their meanings" do
-#       emoticons = {
-#         "☜(⌒▽⌒)☞" => "angel",
-#         "(ΘεΘ;)" => "bored",
-#         "o_O" => "surprised",
-#         "(^_-)" => "wink"
 #       }
 #       emoticons.each do |japanese_emoticon,meaning| 
 #         expect(result['get_meaning'][japanese_emoticon]).to eq(meaning)
