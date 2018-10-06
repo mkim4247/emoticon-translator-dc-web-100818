@@ -33,9 +33,9 @@ def get_japanese_emoticon(file_path, emoticon)
   jap_emoticon = ""
   load_library(file_path)["get_emoticon"].each do |eng_emo, jap_emo|
     if emoticon = eng_emo
-      jap_emo
+      return jap_emo
     else 
-      "Sorry, that emoticon was not found"
+      return "Sorry, that emoticon was not found"
     end 
   end 
 end
