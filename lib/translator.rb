@@ -31,10 +31,8 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   jap_emoticon = ""
-  load_library(file_path)["get_emoticon"].each do |eng_emo, jap_emo|
-    if emoticon = eng_emo
-      jap_emoticon = jap_emo
-    end 
+  if load_library(file_path)["get_emoticon"].keys.include?(emoticon)
+    jap_emoticon = load_library(file_path)[emoticon]
   end 
   jap_emoticon
 end
