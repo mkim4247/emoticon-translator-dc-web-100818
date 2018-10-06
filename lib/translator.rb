@@ -32,11 +32,13 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   emo_file = load_library(file_path)
   sorry_message = "Sorry, that emoticon was not found"
-  if emo_file["get_meaning"].keys.include?(emoticon)
-    emo_file["get_meaning"].each do |eng, jap|
+  emo_file["get_meaning"].each do |eng, jap|
+    if emo_file["get_meaning"].keys.include?(emoticon)
         if emoticon = eng
           return jap 
         end 
+      else 
+        sorry_message
     end 
   end 
 end
