@@ -19,13 +19,12 @@ def load_library(file_path)
   end 
   
   japanese_emoticons.each do |jap_emo|
-    english_emoticons.each do |eng_emo|
       meaning.each do |word|
-        translator["get_meaning"][jap_emo] = "#{word}"
+        translator["get_meaning"][jap_emo] = word
         
       end 
     end 
-  end 
+
   translator
 
 end
