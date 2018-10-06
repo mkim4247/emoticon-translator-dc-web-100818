@@ -35,6 +35,7 @@ def get_japanese_emoticon(file_path, emoticon)
     if emoticon == load_library(file_path)["get_meaning"][eng_emo]
       image = eng_emo 
     end 
+  end 
     image 
 end
 
