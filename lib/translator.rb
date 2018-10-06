@@ -40,24 +40,17 @@ def get_japanese_emoticon(file_path, emoticon)
   end 
 end
 
-def get_english_meaning
-
+def get_english_meaning(file_path, emoticon)
+  emo_file = load_library(file_path)["get_meaning"]
+  sorry_message = "Sorry, that emoticon was not found"
+  
+  if emo_file.has_key?(emoticon)
+    emo_file.fetch_values(emoticon).join
+  else 
+    return sorry_message
+  end 
 end
 
-
-# describe "#get_english_meaning" do
-
-#   it "accepts two arguments, the YAML file path and the emoticon" do
-#     expect { get_english_meaning("./lib/emoticons.yml", "(Ｔ▽Ｔ)") }.to_not raise_error
-#   end
-
-#   it "calls on #load_library and gives it the argument of the file path" do
-#     emoticon_hash = load_library("./lib/emoticons.yml")
-
-#     file_path = "./lib/emoticons.yml"
-#     expect(self).to receive(:load_library).with(file_path).and_return(emoticon_hash)
-#     answer = get_english_meaning("./lib/emoticons.yml", "=D")
-#   end
 
 #   it "returns the English meaning of the Japanese emoticon (＾ｖ＾)" do
 #     expect(get_english_meaning("./lib/emoticons.yml", "(＾ｖ＾)")).to eq("happy")
