@@ -17,15 +17,19 @@ def load_library(file_path)
     english_emoticons << array[0]
     meaning << key 
   end 
-
-    japanese_emoticons.each do |jap_emo|
-        translator["get_meaning"][jap_emo] = 
-        
+  
+  i = 0 
+  while i < meaning.length 
+    translator["get_meaning"][japanese_emoticons[i]] = meaning[i]
+    i += 1 
     end 
 
   translator
 
 end
+
+
+
 
         # angel:
         #   - "O:)"      
