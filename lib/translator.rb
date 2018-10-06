@@ -1,5 +1,6 @@
 # require modules here
 require "yaml"
+require 'pry'
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
@@ -42,6 +43,7 @@ def get_japanese_emoticon(file_path, emoticon)
   else 
     return sorry_message
   end 
+  binding.pry
 end
 
 
