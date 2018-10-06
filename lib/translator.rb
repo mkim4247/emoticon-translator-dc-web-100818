@@ -17,11 +17,10 @@ def load_library(file_path)
     english_emoticons << array[0]
     meaning << key 
   end 
-  emoticons.each do |word, emo_arr|
+
     japanese_emoticons.each do |jap_emo|
-        translator["get_meaning"][jap_emo] = word
+        translator["get_meaning"][jap_emo] = 
         
-      end 
     end 
 
   translator
