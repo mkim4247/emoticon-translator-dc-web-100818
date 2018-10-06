@@ -30,11 +30,10 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  load_library(file_path)
-  
-  if !(translator.include?(emoticon))
-    "Sorry, that emoticon was not found"
+  if !(load_library(file_path).include?(emoticon))
+    "Sorry, that's not here"
   end 
+  
   
 end
 
