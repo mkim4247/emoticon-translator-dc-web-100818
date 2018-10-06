@@ -36,13 +36,13 @@ def get_japanese_emoticon(file_path, emoticon)
   emo_file["get_meaning"].each do |eng, jap|
     if emo_file["get_meaning"].keys.include?(emoticon)
         if emoticon = eng
-          jap_emo = jap 
+          jap
+          break 
         end 
       else 
         sorry_message
     end 
   end 
-  jap_emo
 end
 
 
