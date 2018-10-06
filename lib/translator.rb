@@ -50,27 +50,3 @@ def get_english_meaning(file_path, emoticon)
     return sorry_message
   end 
 end
-
-
-#   it "returns the English meaning of the Japanese emoticon (＾ｖ＾)" do
-#     expect(get_english_meaning("./lib/emoticons.yml", "(＾ｖ＾)")).to eq("happy")
-#   end
-
-#   it "returns the English meaning of the Japanese emoticon (￣ー￣)" do
-#     expect(get_english_meaning("./lib/emoticons.yml", "(￣ー￣)")).to eq("grinning")
-#   end
-
-#   it "returns the English meaning of the Japanese emoticon (Ｔ▽Ｔ)" do
-#     expect(get_english_meaning("./lib/emoticons.yml", "(Ｔ▽Ｔ)")).to eq("sad")
-#   end
-
-#   it "returns an apology message if the argument is not a known emoticon" do
-#     sorry_message = "Sorry, that emoticon was not found"
-#     expect(get_english_meaning("./lib/emoticons.yml", "$#$%{}*")).to eq(sorry_message)
-#   end
-
-# end
-
-
-
-
