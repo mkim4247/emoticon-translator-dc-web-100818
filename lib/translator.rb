@@ -31,23 +31,17 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   emo_file = load_library(file_path)
+  sorry_message = "Sorry, that emoticon was not found"
   if emo_file["get_meaning"].include?(emoticon)
     emo_file["get_meaning"].each do |eng, jap|
         if emoticon = eng
           return jap 
         end 
     end 
-  elsif !(emo_file["get_meaning"].include?(emoticon))
-    "Sorry, that emoticon was not found"
   end 
 end
 
-#   it "returns an apology message if the argument is not a known emoticon" do
-#     sorry_message = "Sorry, that emoticon was not found"
-#     expect(get_japanese_emoticon("./lib/emoticons.yml", "$#$%{}*")).to eq(sorry_message)
-#   end
 
-# end
 
 # describe "#get_english_meaning" do
 
