@@ -30,42 +30,6 @@ def load_library(file_path)
 end
 
 
-
-
-        # angel:
-        #   - "O:)"      
-        #   - "☜(⌒▽⌒)☞"
-        # angry:
-        #   - ">:("
-        #   - "ヽ(ｏ`皿′ｏ)ﾉ"
- 
-  #{angel => [O:), ☜(⌒▽⌒)☞]
-
-
-#       }
-#       emoticons.each do |japanese_emoticon,meaning| 
-#         expect(result['get_meaning'][japanese_emoticon]).to eq(meaning)
-#       end
-#     end
-
-#     it "the keys inside the 'get_emoticon' hash are the English emoticons" do
-#       emoticons = ["O:)", ":'(", ";)", ":$"]
-#       emoticons.each do |english_emoticon| 
-#         expect(result['get_emoticon'].keys).to include(english_emoticon)
-#       end
-#     end
-
-#     it "the emoticon keys inside the 'get_emoticon' hash point to their Japanese equivalents" do
-#       emoticons = {"O:)" => "☜(⌒▽⌒)☞", ":'(" => "(Ｔ▽Ｔ)", ";)" => "(^_-)"}
-#       emoticons.each do |english_emoticon,japanese_emoticon| 
-#         expect(result['get_emoticon'][english_emoticon]).to eq(japanese_emoticon)
-#       end
-#     end
-
-#   end
-
-# end
-
 # describe "#get_japanese_emoticon" do
 
 #   it "accepts two arguments, the YAML file path and the emoticon" do
