@@ -30,8 +30,8 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  image = ""
   load_library(file_path)["get_emoticon"].each do |eng_emo, jap_emo|
+    image = ""
     if emoticon == load_library(file_path)["get_meaning"][eng_emo]
       image = eng_emo 
     end 
