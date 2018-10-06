@@ -35,7 +35,7 @@ def get_japanese_emoticon(file_path, emoticon)
   
   if emo_file.keys.include?(emoticon)
     emo_file.each do |eng, jap|
-        if emoticon = eng
+        if eng = emoticon
           return jap
         end 
     end 
