@@ -30,13 +30,14 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  if load_library(file_path)["get_meaning"].include?(emoticon)
-    load_library(file_path)["get_meaning"].each do |eng, jap|
+  emo_file = load_library(file_path)
+  if emo_file["get_meaning"].include?(emoticon)
+    emo_file["get_meaning"].each do |eng, jap|
         if emoticon = eng
           return jap 
         end 
     end 
-  elsif !(load_library(file_path)["get_meaning"].include?(emoticon))
+  elsif !(emo_file["get_meaning"].include?(emoticon))
     "Sorry, that emoticon was not found"
   end 
 end
