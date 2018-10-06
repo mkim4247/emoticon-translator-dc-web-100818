@@ -36,7 +36,6 @@ def get_japanese_emoticon(file_path, emoticon)
   emo_file.each do |eng, jap|
     if emoticon = eng 
         return jap
-    end 
   else 
     return sorry_message
   end 
